@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AINI.exe — An Apology</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background">
+        <div class="grid"></div>
+        <div id="particles"></div>
+    </div>
+
+    <!-- MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn" class="music-btn" onclick="toggleMusic()">
+        ♫ MUSIC: OFF
+    </button>
+
+
+    <!-- ========================= -->
+    <!-- PAGE 0 : BOOT -->
+    <!-- ========================= -->
+
+    <section class="page active" id="page0">
+
+        <div class="terminal boot-terminal">
+
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+
+                <span class="terminal-title">
+                    AINI.exe
+                </span>
+            </div>
+
+            <div class="terminal-body">
+
+                <p class="pink">
+                    >>> booting_apology.exe
+                </p>
+
+                <p id="bootText"></p>
+
+                <div class="progress">
+                    <div id="progressBar"></div>
+                </div>
+
+                <p id="bootStatus" class="muted">
+                    Initializing...
+                </p>
+
+                <button
+                    id="startBtn"
+                    class="code-btn hidden"
+                    onclick="startExperience()"
+                >
+                    [ RUN PROGRAM ]
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 1 : WHY -->
+    <!-- ========================= -->
+
+    <section class="page" id="page1">
+
+        <div class="terminal">
+
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+
+                <span class="terminal-title">
+                    why_i_built_this.py
+                </span>
+            </div>
+
+            <div class="terminal-body">
+
+                <div class="code-line">
+                    <span class="keyword">person</span>
+                    =
+                    <span class="string">"Aini"</span>
+                </div>
+
+                <div class="code-line">
+                    <span class="keyword">reason</span>
+                    =
+                    <span class="string">"I owe you an apology."</span>
+                </div>
+
+                <br>
+
+                <div class="message-box">
+
+                    <p>
+                        Aini, saya tahu mungkin perkataan “maaf” saja
+                        takkan mampu padam semua rasa sakit yang saya
+                        dah buat awak rasa.
+                    </p>
+
+                    <p>
+                        Saya benar-benar menyesal kerana dalam keadaan
+                        saya yang terlalu ikut ego dan kelemahan diri
+                        sendiri, saya akhirnya melukakan hati seseorang
+                        yang sebenarnya tak pernah jemu untuk ada dengan saya.
+                    </p>
+
+                    <p>
+                        Saya sedar saya tak boleh paksa awak untuk terus
+                        percaya, terus terima, atau terus maafkan saya.
+                        Kalau awak perlukan masa, saya faham.
+                    </p>
+
+                    <p class="highlight">
+                        Tapi jauh dalam hati saya, saya masih berharap
+                        awak sudi buka sedikit ruang untuk saya.
+                    </p>
+
+                    <p>
+                        Bukan untuk saya meminta semuanya kembali seperti
+                        dulu dengan serta-merta, tetapi beri saya peluang
+                        untuk perlahan-lahan tebus kesalahan saya, belajar
+                        daripada apa yang saya dah buat dan tunjukkan
+                        melalui perbuatan bahawa saya benar-benar menyesal.
+                    </p>
+
+                    <p class="highlight">
+                        Aini, saya tak nak kehilangan awak hanya kerana
+                        kesilapan yang saya sendiri lakukan.
+                    </p>
+
+                </div>
+
+                <button class="code-btn" onclick="nextPage(2)">
+                    >>> continue()
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 2 : MISTAKES -->
+    <!-- ========================= -->
+
+    <section class="page" id="page2">
+
+        <div class="terminal">
+
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+
+                <span class="terminal-title">
+                    my_mistakes.log
+                </span>
+            </div>
+
+            <div class="terminal-body">
+
+                <p class="pink">
+                    >>> scanning past actions...
+                </p>
+
+                <div class="error-list">
+
+                    <div class="error">
+                        <span>ERROR 01</span>
+                        <p>
+                            Ego was detected.
+                        </p>
+                    </div>
+
+                    <div class="error">
+                        <span>ERROR 02</span>
+                        <p>
+                            Feelings were ignored.
+                        </p>
+                    </div>
+
+                    <div class="error">
+                        <span>ERROR 03</span>
+                        <p>
+                            Trust was damaged.
+                        </p>
+                    </div>
+
+                    <div class="error">
+                        <span>ERROR 04</span>
+                        <p>
+                            I hurt someone who never deserved it.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="center-text">
+
+                    <p class="big-text">
+                        I wish I could go back.
+                    </p>
+
+                    <p>
+                        Bukan untuk mengubah apa yang berlaku,
+                        tetapi untuk menjadi seseorang yang tahu
+                        betapa berharganya hati awak.
+                    </p>
+
+                </div>
+
+                <button class="code-btn" onclick="nextPage(3)">
+                    [ VIEW WHAT I REGRET ]
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 3 : MEMORY -->
+    <!-- ========================= -->
+
+    <section class="page" id="page3">
+
+        <div class="terminal">
+
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+
+                <span class="terminal-title">
+                    memory.py
+                </span>
+            </div>
+
+            <div class="terminal-body">
+
+                <p class="pink">
+                    >>> opening memories...
+                </p>
+
+                <div class="folder-container">
+
+                    <button class="folder" onclick="openMemory(1)">
+                        📁 the_beginning
+                    </button>
+
+                    <button class="folder" onclick="openMemory(2)">
+                        📁 the_good_days
+                    </button>
+
+                    <button class="folder" onclick="openMemory(3)">
+                        📁 things_you_did_for_me
+                    </button>
+
+                    <button class="folder" onclick="openMemory(4)">
+                        📁 things_i_should_have_appreciated
+                    </button>
+
+                </div>
+
+                <div id="memoryOutput" class="memory-output">
+                    <span class="muted">
+                        Click a folder to open...
+                    </span>
+                </div>
+
+                <button class="code-btn" onclick="nextPage(4)">
+                    >>> continue_to_next_file()
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 4 : SECOND LETTER -->
+    <!-- ========================= -->
+
+    <section class="page" id="page4">
+
+        <div class="terminal">
+
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+
+                <span class="terminal-title">
+                    things_i_should_have_said.txt
+                </span>
+            </div>
+
+            <div class="terminal-body">
+
+                <div class="message-box">
+
+                    <p>
+                        Last but not least, terima kasih kerana selalu ada,
+                        menyayangi tanpa batas, tidak mengharap segala balasan.
+                    </p>
+
+                    <p>
+                        Awak wanita yang hebat, banyak memberi kemaafan
+                        tanpa rasa jemu.
+                    </p>
+
+                    <p>
+                        Mungkin agak terlambat untuk saya menghargai,
+                        tapi mungkin untuk peluang kedua dengan segala
+                        harapan saya, saya janji untuk genggam dengan erat
+                        setiap janji-janji yang pernah diungkap dan tidak
+                        mengulangi segala hal yang membuat awak rasa goyah.
+                    </p>
+
+                    <div class="quote">
+                        “Biar masa menjadi saksi,
+                        awak sentiasa tumbuh dari setiap luka
+                        yang saya sendiri wujudkan.”
+                    </div>
+
+                    <p>
+                        Saya minta maaf dan menyesal, mengharapkan awak
+                        sentiasa membuka ruang untuk saya.
+                    </p>
+
+                    <p class="highlight">
+                        Maaf untuk selama ini.
+                    </p>
+
+                </div>
+
+                <button class="code-btn" onclick="nextPage(5)">
+                    >>> continue_to_final.exe
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 5 : RESTART -->
+    <!-- ========================= -->
+
+    <section class="page" id="page5">
+
+        <div class="terminal">
+
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+
+                <span class="terminal-title">
+                    if_i_could_restart.py
+                </span>
+            </div>
+
+            <div class="terminal-body">
+
+                <div class="code-block">
+
+                    <p>
+                        <span class="keyword">if</span>
+                        I_could_restart_that_day:
+                    </p>
+
+                    <p class="indent">
+                        I would listen more.
+                    </p>
+
+                    <p class="indent">
+                        I would control my ego.
+                    </p>
+
+                    <p class="indent">
+                        I would be more honest.
+                    </p>
+
+                    <p class="indent">
+                        I would think before I acted.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <span class="keyword">else</span>:
+                    </p>
+
+                    <p class="indent highlight">
+                        I will learn from it.
+                    </p>
+
+                </div>
+
+                <div class="restart-message">
+
+                    <p class="big-text">
+                        Unfortunately,
+                    </p>
+
+                    <p>
+                        life doesn't have a restart button.
+                    </p>
+
+                    <p>
+                        But it gave me something else:
+                    </p>
+
+                    <p class="highlight big-text">
+                        the chance to do better from here.
+                    </p>
+
+                </div>
+
+                <button class="code-btn" onclick="nextPage(6)">
+                    [ RUN AGAIN ]
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 6 : FINAL MESSAGE -->
+    <!-- ========================= -->
+
+    <section class="page" id="page6">
+
+        <div class="final-card">
+
+            <div class="heart">
+                ♡
+            </div>
+
+            <p class="terminal-small">
+                final_message.txt
+            </p>
+
+            <h1>
+                Dear Aini,
+            </h1>
+
+            <div class="final-text">
+
+                <p>
+                    Saya tak minta awak lupakan apa yang berlaku.
+                </p>
+
+                <p>
+                    Saya juga tak minta awak maafkan saya hari ini.
+                </p>
+
+                <p>
+                    Saya cuma berharap...
+                </p>
+
+                <p class="final-highlight">
+                    awak masih sudi membuka sedikit ruang
+                    untuk saya.
+                </p>
+
+                <p>
+                    Bukan dengan kata-kata semata-mata,
+                    tapi dengan masa dan perbuatan.
+                </p>
+
+            </div>
+
+            <div class="final-question">
+
+                <p>
+                    Would you allow me
+                </p>
+
+                <h2>
+                    to try again?
+                </h2>
+
+            </div>
+
+            <div class="choice-buttons">
+
+                <button
+                    class="choice yes"
+                    onclick="finalAnswer('yes')"
+                >
+                    ♡ I'll give you a chance
+                </button>
+
+                <button
+                    class="choice time"
+                    onclick="finalAnswer('time')"
+                >
+                    I need some time
+                </button>
+
+            </div>
+
+            <div id="finalResponse"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 7 : END -->
+    <!-- ========================= -->
+
+    <section class="page" id="page7">
+
+        <div class="ending">
+
+            <div class="heart-large">
+                ♡
+            </div>
+
+            <p class="pink">
+                AINI.exe
+            </p>
+
+            <h1 id="endingTitle">
+                Thank you.
+            </h1>
+
+            <p id="endingText">
+                Whatever your answer is,
+                thank you for taking the time
+                to read all of this.
+            </p>
+
+            <div class="terminal-line">
+                >>> program_ended<span class="cursor">_</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
